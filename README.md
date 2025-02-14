@@ -36,3 +36,19 @@
 * SPL Command: source="secure.log" | iplocation src | geostats count by Country
 * ![image](https://github.com/user-attachments/assets/ec115e91-9f27-4e21-876f-c7c2533675ef)
 
+## 3. Splunk Reports
+### 3.1 Use Case 1
+* Requirements: Security Manager should be informed with list of IP address and Country location from which failed SSH attempts are being made at every 24 hours over email.
+* SPL Command:
+
+source="secure.log" fail*
+| iplocation src
+| table src, Country
+|  uniq
+<img width="941" alt="image" src="https://github.com/user-attachments/assets/863bde37-1839-420a-9f5d-eea32335bd82" />
+
+* To automate the search of this query to run every day, SAVE AS > Report
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/e6b0ab9b-bbbb-4fc9-8d23-4f62a9e11a18" />
+
+* Edit > Edit Schedule 
+* Go to 'Reports' tab to review list of all reports created
