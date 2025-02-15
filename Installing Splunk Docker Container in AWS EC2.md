@@ -1,16 +1,16 @@
 # Installing Splunk Docker Container in Windows (Personal Laptop).md
 
-## 1. Download Dockrer App to Windows (Personal Laptop)
+## 1. Download Docker App to Windows (Personal Laptop)
 
 * Go to www.docker.com/products/docker-desktop/ and 'Download for Windows -AMD64"
 ![image](https://github.com/user-attachments/assets/3a839e39-e253-4d84-9238-7dd5798156aa)
 
-*Download the app > open an account
+* Download the 'Docker.Desktop' app > open an account
 ![image](https://github.com/user-attachments/assets/eabbe988-a0a8-4414-92b8-17e2f8d08772)
 
 ## 2. Open Command Prompt in Windows (Personal Laptop)
 
-* As a normal user (not root), type **docker run -d -p 8000:80000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD=<<ENTER HERE YOUR PREFERRED PASSWORD>> splunk/splunk:late st** > select Enter. After running, type **docker ps**. This will list all Docker containers including the one you just created called **zealous_brattain**
+* As a normal user (not root), type **docker run -d -p 8000:80000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD=--enter preferred password-- splunk/splunk:late st** > press Enter. After running, type **docker ps**. This will list all Docker containers including the Splunk container just created called **zealous_brattain**
 
 ![image](https://github.com/user-attachments/assets/dd9c233f-f33b-45c4-9daa-2dc2eae894a3)
 
