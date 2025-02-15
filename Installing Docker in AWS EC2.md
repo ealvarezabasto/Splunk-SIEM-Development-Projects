@@ -25,3 +25,9 @@
   ![image](https://github.com/user-attachments/assets/dbb52d2c-9287-4b41-8f6a-884fdbeecb0e)
 
 ## 2. Create Splunk ES Account [Ubuntu Linux]
+
+* Go to www.docker.com/products/docker-desktop/ and 'Download for Windows -AMD64"
+![image](https://github.com/user-attachments/assets/3a839e39-e253-4d84-9238-7dd5798156aa)
+
+*Download the app
+![image](https://github.com/user-attachments/assets/eabbe988-a0a8-4414-92b8-17e2f8d08772)
