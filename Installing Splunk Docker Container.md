@@ -1,6 +1,6 @@
-##Installing Splunk Docker Container.md
+## Installing Splunk Docker Container.md
 
-###Once Docker is up and running, launch Splunk Docker container
+### Once Docker is up and running, launch Splunk Docker container
 * Access AWS EC2 'Splunk-Docker-Ubuntu'
 
 * docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=<password>" -- name splunk splunk/splunk:latest
@@ -15,22 +15,19 @@
 * Type **docker ps** > shows the list of containers. Currently we have 1 called Splunk
   ![image](https://github.com/user-attachments/assets/acaf506e-cdc6-4242-af03-7c8808a069a5)
 
-*Return to AWS EC2 'Splunk-Docker-Ubuntu'
+* Return to AWS EC2 'Splunk-Docker-Ubuntu'
 ![image](https://github.com/user-attachments/assets/0e60bb85-4677-4c1f-9b6d-b73e86730d3b)
 
-*try to access the Public IPv4 address > browser not running
+* try to access the Public IPv4 address > browser not running
 ![image](https://github.com/user-attachments/assets/1db5dc5c-bfd8-4dda-9b48-fc79dc09788e)
 
-*Return to AWS EC2 'Splunk-Docker-Ubuntu', select 'launch-wizard-4' > select 'Security group ID'
+* Return to AWS EC2 'Splunk-Docker-Ubuntu', select 'launch-wizard-4' > select 'Security group ID'
   ![image](https://github.com/user-attachments/assets/439fbea8-869e-4359-b9aa-f2fe0ca762f8)
 
-*Select 'Edit inbound rules'
+* Select 'Edit inbound rules'
 ![image](https://github.com/user-attachments/assets/8a38a52d-fedf-4f8a-8282-a7350278f8ca)
 
-*Add 'Custom TCP' > 8000 > Anywhere-IPv4
+* Add 'Custom TCP' > 8000 > Anywhere-IPv4
   ![image](https://github.com/user-attachments/assets/35b393d0-e725-4b1b-a66a-e8118925b439)
 
-*Copy the Public IPv4 address:8000 and page should appear
-
-
-docker run -d -p 8000:8000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD=Splunk$$11 splunk/splunk:latest
+* Copy the Public IPv4 address:8000 and page should appear
