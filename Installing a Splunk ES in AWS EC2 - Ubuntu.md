@@ -39,21 +39,23 @@
 * type **sudo /opt/splunk/bin/splunk start** > enter username / password > it appears that your Splunk WEB IP address is: http://ip-172-31-1-61:8000
   ![image](https://github.com/user-attachments/assets/2db78fa8-89d7-46b3-b527-8c33a23a9863)
 
-*type http://ip-172-31-1-61:8000 is a browser, but no page appears.
+* type http://ip-172-31-1-61:8000 is a browser, but no page appears.
   <img width="427" alt="image" src="https://github.com/user-attachments/assets/56bb3a1b-9475-4276-8e58-13fd0c28be4a" />
 
-*Return to AWS EC2 instance > 'Security' > select 'launch-wizard'
+* Return to AWS EC2 instance > 'Security' > select 'launch-wizard'
   ![image](https://github.com/user-attachments/assets/b798ad59-a5e7-4a5c-b9ce-e01788c8c8e6)
 
-*Select 'Security group ID' 
+* Select 'Security group ID' 
   ![image](https://github.com/user-attachments/assets/3a4d0272-8a75-4fe8-a805-728e36e15cc3)
 
-*Select 'Edit inbout rules' > 'Add rule' > Custom TCP - 8000 (port #) > Anywhere IPV4 > 'Save Rule'
+* Select 'Edit inbout rules' > 'Add rule' > Custom TCP - 8000 (port #) > Anywhere IPV4 > 'Save Rule'
    <img width="953" alt="image" src="https://github.com/user-attachments/assets/c9819835-fc2c-43f2-a6c7-00794bf3ad8d" />
 
-*Return to AWS EC2 > copy Public IPv4 address and add 80000 > enter username/password previously created
+* Return to AWS EC2 Splunk-ES-Ubuntu instance and copy Public IPv4 address.
   ![image](https://github.com/user-attachments/assets/f2fc97ee-c114-4efb-9603-b7b21004a217)
 
+* Copy IPv3 address and add :8000 > enter username/password previously created
+  ![image](https://github.com/user-attachments/assets/0c172391-91d8-4c2e-a3e4-d85033b59df6)
 
 
 
