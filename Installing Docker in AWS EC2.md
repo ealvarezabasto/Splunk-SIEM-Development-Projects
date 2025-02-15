@@ -1,4 +1,4 @@
-# Installing a Server in AWS EC2 (Docker)
+# Installing an Ubuntu Linux Server in AWS EC2 for Docker
 
 ## 1. Create Ubuntu Linux within AWS EC2
 * Select EC2
@@ -33,7 +33,7 @@
 *  Select 'Connect'
   ![image](https://github.com/user-attachments/assets/0bce50b0-b6b8-4a28-9b33-bd1750b2997c)
 
-* Within Command LIne, type **sudo su -**, now that you're a root use type **docker run -d -p 8000:8000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD='<password>' splunk/splunk:latest**
+* Within Command LIne, type **sudo su -**, now that you're a root use type **docker run -d -p 8000:8000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD='type preferred password' splunk/splunk:latest**
   ![image](https://github.com/user-attachments/assets/c3c64c93-6169-4fe6-84a1-e362596c24bc)
 
 * Type **docker ps** > shows the list of containers. Currently we have 1 called Splunk
