@@ -1,4 +1,4 @@
-#Installing a Server in AWS EC2
+#Installing Docker in AWS EC2
 
 ##1. Access AWS EC2
 * Select EC2
