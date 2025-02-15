@@ -48,7 +48,7 @@
 *Select 'Security group ID' 
   ![image](https://github.com/user-attachments/assets/3a4d0272-8a75-4fe8-a805-728e36e15cc3)
 
- * Select 'Edit inbout rules' > 'Add rule' > Custom TCP - 8000 (port #) > Anywhere IPV4 > 'Save Rule'
+*Select 'Edit inbout rules' > 'Add rule' > Custom TCP - 8000 (port #) > Anywhere IPV4 > 'Save Rule'
    <img width="953" alt="image" src="https://github.com/user-attachments/assets/c9819835-fc2c-43f2-a6c7-00794bf3ad8d" />
 
 *Return to AWS EC2 > copy Public IPv4 address and add 80000 > enter username/password previously created
