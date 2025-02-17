@@ -12,22 +12,21 @@
 * Select 'Ubuntu'> Launch Instance
   ![image](https://github.com/user-attachments/assets/a5c31582-b2f6-42bd-a5c6-e959dec994e7)
 
-*Select 'splunkOS' for Key pair and check 'Allow HTTPS traffic from the internet'
+* Select 'splunkOS' for Key pair and check 'Allow HTTPS traffic from the internet'
   ![image](https://github.com/user-attachments/assets/4d6c5389-b320-4d78-b80e-6656feb56aba)
 
-*increase to 20 GIB and select 'Launch Instance'
+* increase to 20 GIB and select 'Launch Instance'
   ![image](https://github.com/user-attachments/assets/51ce77d6-33ec-4ca6-98e0-80daad9253da)
 
 * Should display the 'Splunk-ES-UbuntuLinux' Ubuntu Linux Server
   ![image](https://github.com/user-attachments/assets/bcd55739-91f0-468a-a0f6-aee112125359)
 
-*Select 'Splunk-ES-UbuntuLinux' Linux Sever > Copy the Public IPv4 address (3.145.94.85) and select 'Connect'
+* Select 'Splunk-ES-UbuntuLinux' Linux Sever > Copy the Public IPv4 address (3.145.94.85) and select 'Connect'
   ![image](https://github.com/user-attachments/assets/dbb52d2c-9287-4b41-8f6a-884fdbeecb0e)
 
-### Once Docker is up and running, launch Splunk Docker container
+### 2. Once Docker is up and running, launch 'Splunk-Docker-Ubuntu' container
 * Access AWS EC2 'Splunk-Docker-Ubuntu'
-
-* docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=<password>" -- name splunk splunk/splunk:latest
+  
   ![image](https://github.com/user-attachments/assets/0a363314-ce73-4b8b-a48c-db5320a51be4)
 
 *  Select 'Connect'
