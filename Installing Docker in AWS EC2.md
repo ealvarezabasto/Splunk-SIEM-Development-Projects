@@ -46,9 +46,20 @@
   
   ![image](https://github.com/user-attachments/assets/9f1c7ec7-693d-45ae-adde-5b099dccea7a)
 
-
 * try to access the Public IPv4 address > page should appear
+  
 ![image](https://github.com/user-attachments/assets/b7610b2e-7986-4e1e-9361-269c46540892)
 ![image](https://github.com/user-attachments/assets/cd27e366-b097-41e7-b35b-7511b40cfc3a)
 
+## 3. Finding out the Password of your Splunk Container in Docker
 
+* Type **docker ps** > search for Splunk Container within Docker - name: sharp_proskuriakova
+
+* Type docker inspect --name of Splunk Container--
+
+  <img width="935" alt="image" src="https://github.com/user-attachments/assets/6f68b8e7-5693-4f0c-b5a1-41019c9053ba" />
+
+
+* Scroll to where it shows SPLUNK_PASSWORD=
+
+  ![image](https://github.com/user-attachments/assets/6e87e9de-1a9b-456b-a7ce-5017c6b59c3d)
