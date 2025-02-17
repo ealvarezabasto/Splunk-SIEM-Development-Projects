@@ -24,7 +24,7 @@
 * Select 'Splunk-ES-UbuntuLinux' Linux Sever > Copy the Public IPv4 address (3.145.94.85) and select 'Connect'
   ![image](https://github.com/user-attachments/assets/dbb52d2c-9287-4b41-8f6a-884fdbeecb0e)
 
-### 2. Once Docker is up and running, launch 'Splunk-Docker-Ubuntu' container
+### 2. Once server is up and running, launch 'Splunk-Docker-Ubuntu' container
 * Access AWS EC2 'Splunk-Docker-Ubuntu'
   
   ![image](https://github.com/user-attachments/assets/0a363314-ce73-4b8b-a48c-db5320a51be4)
@@ -33,10 +33,13 @@
   ![image](https://github.com/user-attachments/assets/0bce50b0-b6b8-4a28-9b33-bd1750b2997c)
 
 * Within Command LIne, type **sudo su -**, now that you're a root use type **docker run -d -p 8000:8000 -e SPLUNK_START_ARGS='--accept-license' -e SPLUNK_PASSWORD='type preferred password' splunk/splunk:latest**
-  ![image](https://github.com/user-attachments/assets/c3c64c93-6169-4fe6-84a1-e362596c24bc)
 
-* Type **docker ps** > shows the list of containers. Currently we have 1 called Splunk
-  ![image](https://github.com/user-attachments/assets/acaf506e-cdc6-4242-af03-7c8808a069a5)
+* Type **docker ps** > shows the list of containers. Currently we have 1 Splunk container called sharp_proskuriakova
+  
+  ![image](https://github.com/user-attachments/assets/753871d7-9af3-4352-8d6d-e55203ee9108)
+
+* Type 
+
 
 * Return to AWS EC2 'Splunk-Docker-Ubuntu'
 ![image](https://github.com/user-attachments/assets/0e60bb85-4677-4c1f-9b6d-b73e86730d3b)
