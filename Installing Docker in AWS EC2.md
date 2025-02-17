@@ -62,4 +62,5 @@
 
 * Scroll to where it shows SPLUNK_PASSWORD=
 
-  ![image](https://github.com/user-attachments/assets/6e87e9de-1a9b-456b-a7ce-5017c6b59c3d)
+  ![image](https://github.com/user-attachments/assets/e5516fbf-387b-40db-a945-950d8eefd230)
+
