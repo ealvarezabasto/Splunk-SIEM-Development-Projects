@@ -38,22 +38,17 @@
   
   ![image](https://github.com/user-attachments/assets/753871d7-9af3-4352-8d6d-e55203ee9108)
 
-* Type 
-
+* Type **docker logs sharp_proskuriakova**
+  
+  <img width="566" alt="image" src="https://github.com/user-attachments/assets/43764da5-165e-4593-82a6-8a9775a12641" />
 
 * Return to AWS EC2 'Splunk-Docker-Ubuntu'
-![image](https://github.com/user-attachments/assets/0e60bb85-4677-4c1f-9b6d-b73e86730d3b)
+  
+  ![image](https://github.com/user-attachments/assets/9f1c7ec7-693d-45ae-adde-5b099dccea7a)
 
-* try to access the Public IPv4 address > browser not running
-![image](https://github.com/user-attachments/assets/1db5dc5c-bfd8-4dda-9b48-fc79dc09788e)
 
-* Return to AWS EC2 'Splunk-Docker-Ubuntu', select 'launch-wizard-4' > select 'Security group ID'
-  ![image](https://github.com/user-attachments/assets/439fbea8-869e-4359-b9aa-f2fe0ca762f8)
+* try to access the Public IPv4 address > page should appear
+![image](https://github.com/user-attachments/assets/b7610b2e-7986-4e1e-9361-269c46540892)
+![image](https://github.com/user-attachments/assets/cd27e366-b097-41e7-b35b-7511b40cfc3a)
 
-* Select 'Edit inbound rules'
-![image](https://github.com/user-attachments/assets/8a38a52d-fedf-4f8a-8282-a7350278f8ca)
 
-* Add 'Custom TCP' > 8000 > Anywhere-IPv4
-  ![image](https://github.com/user-attachments/assets/35b393d0-e725-4b1b-a66a-e8118925b439)
-
-* Copy the Public IPv4 address:8000 and page should appear
