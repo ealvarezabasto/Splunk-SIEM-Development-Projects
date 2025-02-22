@@ -2,7 +2,7 @@
 
 **Purpose:** Add-ons extend the functionality of the Splunk platform and provide required field extractions, lookups, saved searches, and others.
 
-### 1 For Data Parsing
+### 1. Splunk Add-on for Unix and Linux: For Data Parsing purposes
 
 **Description:** For the logs that Splunk does not parse by default, you can install various AddOns from the Splunk marketplace to do the parsing for us.
 
@@ -28,9 +28,16 @@
   * Entire secure.log file is entirely getting parsed thanks to the installation of the add-on app.
   <img width="942" alt="image" src="https://github.com/user-attachments/assets/57382911-656a-4015-870a-0d421456bbbe" />
   
-### 2. For Data Input
+### 2. Splunk Add-on for Unix and Linux: For Other purposes (listed below)
+**Description** 
+* Field extraction
+* Monitors file and directories
+* Has scripts that run and give you the output related to the CPU utility utilization, the overall badwidth and disk space
+* Fetch data from a specific destination
 
-**Description:** Add-ons can also be used to extract data from a specific destination.
+### 3. Splunk Add-On for AWS to fetch data from AWS Destination
+
+**Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination.
 
 #### * **Example 1** 
 
@@ -38,9 +45,4 @@
 
 * Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. 
 
-#### * **Example 1** 
-* Using Splunk Add-on for Unix and Linux for:
-* Field extraction
-* Monitors file and directories
-* Has scripts that run and give you the output related to the CPU utility utilization, the overall badwidth and disk space
-* 
+
