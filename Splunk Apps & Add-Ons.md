@@ -1,6 +1,8 @@
 ## Splunk Apps & Add-Ons
 
 **Purpose:** Add-ons extend the functionality of the Splunk platform and provide required field extractions, lookups, saved searches, and others.
+* Add-On: To fetch data and parse data
+* App: For dashboard creation
 
 ### 1. Splunk Add-on for Unix and Linux: For Data Parsing purposes
 
@@ -34,15 +36,27 @@
 * Monitors file and directories
 * Has scripts that run and give you the output related to the CPU utility utilization, the overall badwidth and disk space
 * Fetch data from a specific destination
+* billing information
+*  cloudwath
+*  config logs
+*  inspector
+*  any toher custom data
+
+  ![image](https://github.com/user-attachments/assets/609c92b8-1fec-4960-bf70-7baff8ea5c11)
+
+### 3. Splunk App for Unix and Linux
+
+**Description:** Useful to create dashboards
+
 
 ### 3. Splunk Add-On for AWS to fetch data from AWS Destination
 
-**Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination. Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. 
+**Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination. Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. The Splunk Add-on for AWS allows a Splunk software administrato to collect AWS related data and logs.
 
-#### * **Example 1** 
+  ![image](https://github.com/user-attachments/assets/442c8556-6803-4e74-ad18-4dc5adecdfea)
 
-![image](https://github.com/user-attachments/assets/442c8556-6803-4e74-ad18-4dc5adecdfea)
+### 4. Splunk App Add-On
 
-* 
+**Description:** Apps delivers user experience that makes data immediately useful typically with pre-built dashboards that makes data easy to analyze. You're able to analyze events through dashboards.
 
 
