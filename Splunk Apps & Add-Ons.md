@@ -1,4 +1,4 @@
-## Splunk Add-Ons
+## Splunk Apps & Add-Ons
 
 **Purpose:** Add-ons extend the functionality of the Splunk platform and provide required field extractions, lookups, saved searches, and others.
 
