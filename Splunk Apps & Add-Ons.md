@@ -48,15 +48,74 @@
 
 **Description:** Useful to create dashboards
 
+### 4. Splunk App Add-On
 
-### 3. Splunk Add-On for AWS to fetch data from AWS Destination
+**Description:** Apps delivers user experience that makes data immediately useful typically with pre-built dashboards that makes data easy to analyze. You're able to analyze events through dashboards.
+
+### 5. Splunk Add-On for AWS to fetch data from AWS Destination
 
 **Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination. Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. The Splunk Add-on for AWS allows a Splunk software administrato to collect AWS related data and logs.
 
   ![image](https://github.com/user-attachments/assets/442c8556-6803-4e74-ad18-4dc5adecdfea)
 
-### 4. Splunk App Add-On
+* After download "Splunk Add-on for AWS", click on it
+  ![image](https://github.com/user-attachments/assets/1191d8a3-5c83-4891-8c36-d13d5774d793)
 
-**Description:** Apps delivers user experience that makes data immediately useful typically with pre-built dashboards that makes data easy to analyze. You're able to analyze events through dashboards.
+* Click on 'Configuration' > select 'Add'> the following information is required to be filled out:
 
+  ![image](https://github.com/user-attachments/assets/432ec66f-275c-477c-94fc-ea066c00110e)
 
+* Access your AWS account > IAM > User > Create User
+  
+  ![image](https://github.com/user-attachments/assets/b4352097-6caa-4ac3-bbca-0d5c75195ba8)
+
+* Splunk 1 (AWS): User name: Splunk
+  
+  ![image](https://github.com/user-attachments/assets/bd23ae0f-1414-417e-9432-65dae0996f5e)
+
+* Step 2 (AWS): Permission policies should be 'Read Only Access'
+
+  ![image](https://github.com/user-attachments/assets/7e27d88e-6878-49b8-9300-781f81555a53)
+
+* Step 3 (AWS): Create User
+
+  ![image](https://github.com/user-attachments/assets/ebf021c3-3451-4890-9d5c-9cc3ca2e04e4)
+
+* Step 4 (AWS): Create access key
+
+  ![image](https://github.com/user-attachments/assets/5a7fb386-4286-41ff-b7b2-ab2138362adf)
+
+* Return to Splunk, paste Key ID / Secret Key
+  
+  ![image](https://github.com/user-attachments/assets/ca1634d8-5dd6-4ac4-92fd-6447c8adec1f)
+
+* Within Splunk, got to 'inputs' tab and select 'Create New Input' > Metadata
+
+  ![image](https://github.com/user-attachments/assets/1104bcd6-1e88-4f9f-b07d-ae9c9910a63b)
+
+* Fill out information and the type of data you want to collect from AWS APIs.
+* For "AWS Account" should be the AWS User you just created
+
+  ![image](https://github.com/user-attachments/assets/b131ffef-6b95-4e88-977b-d5b46f3e183c)
+
+* SUCCESS! AWS Add-on with the help of our AWS credentials will connect to AWS account to retrieve data
+
+* In Splunk, got to 'Search & Reporting' app > Data Summary > to see multiple sources of data and sourcetypes
+
+  ![image](https://github.com/user-attachments/assets/89a2f617-af2d-4aa3-9b72-b0ce5841cec0)
+
+* Click on source: 711387119305:us-east-2:ec2_security_groups
+
+  ![image](https://github.com/user-attachments/assets/fe6ef479-5fdf-4606-ac24-810a4fd5dab3)
+
+* By going back to AWS > EC2 > Security Groups, you can see the information is very much similar to the one seen in Splunk.
+
+  ![image](https://github.com/user-attachments/assets/9e1e121f-0892-4f3c-b06c-1d2b2ed9340e)
+
+* Once done with this investigation, return to Splunk and deactivate/delete AWS Input and Configuration
+
+  ![image](https://github.com/user-attachments/assets/66c6389b-d796-42ae-917d-d6bcebf290fc)
+
+* Within AWS, delete User and Access Key ID
+
+  ![image](https://github.com/user-attachments/assets/f60614a7-1cbd-45bf-9d5d-19a06bdbb37b)
