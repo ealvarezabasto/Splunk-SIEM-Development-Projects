@@ -37,12 +37,12 @@
 
 ### 3. Splunk Add-On for AWS to fetch data from AWS Destination
 
-**Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination.
+**Description:** Add-ons (e.g., AWS Add-On) can also be used to extract data from a specific destination. Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. 
 
 #### * **Example 1** 
 
 ![image](https://github.com/user-attachments/assets/442c8556-6803-4e74-ad18-4dc5adecdfea)
 
-* Using AWS Add-On to extract data from AWS. The AWS Add-on has required scripts that connect to your AWS Environment and retrieve the required logs and other information, and add it as part of Splunk environment. 
+* 
 
 
