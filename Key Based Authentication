@@ -1,0 +1,4 @@
+**Description:** In this type of authentication, there are two special keys that are generated. One key is called a Public Key and second key is called a Private key.
+
+If public key is stored in server and is used as authentication mechanism, only the corresponding private key can be used to successfully authenticate.
+
