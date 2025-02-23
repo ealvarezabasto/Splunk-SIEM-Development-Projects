@@ -6,6 +6,9 @@
 
 * We can have configuration files with same sever names and field names (different values) in **default**, **local**, and **app directories**.
 
-* 1. Local > 2. App > 3. Default
+1. System Local -- highest priority
+2. App Local Directory
+3. App default directory
+4. System Default Directory** -- lowest priority
 
-* Default directory is to never be changed. Why? Whenver you do a Splunk Upgrade, all the configurations within the default directory, they will be changed. If you make any change to the default configuration files, they will be overwritten during the upgrade, and your Splunk installation will stop working. 
+**System Default directory is to never be changed. Why? Whenver you do a Splunk Upgrade, all the configurations within the default directory, they will be changed. If you make any change to the default configuration files, they will be overwritten during the upgrade, and your Splunk installation will stop working. 
