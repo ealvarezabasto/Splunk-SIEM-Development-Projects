@@ -1,4 +1,7 @@
 # Log Types
 
-## **auth.log**
-* **Description:** authentication logs
+## **authentication log**
+* **Name:** auth.log
+
+## **Active Directory logs**
+* **Name:** AD logs
