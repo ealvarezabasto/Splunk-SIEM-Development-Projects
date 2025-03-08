@@ -1,2 +1,4 @@
-**auth.log**
-* Description: authentication logs
+# Log Types
+
+## **auth.log**
+* **Description:** authentication logs
