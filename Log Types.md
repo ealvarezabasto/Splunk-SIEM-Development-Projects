@@ -5,3 +5,5 @@
 
 ## **Active Directory logs**
 * **Name:** AD logs
+
+## **Web Server logs**
