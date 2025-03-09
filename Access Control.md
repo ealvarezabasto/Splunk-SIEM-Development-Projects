@@ -1,0 +1,110 @@
+# Access Control
+
+**Description:** Splunk Enterprise Authentication allows us to create users, add them to roles (groups and assign permissions to those roles.
+
+## Authentication Methods
+
+* Within 'Settings' > 'Authentication methods'
+
+  ![image](https://github.com/user-attachments/assets/7ef9f434-2775-4234-a231-7259685e4576)
+
+* Definition: LDAP (Lightweight Directory Access Protocol) and SAML (Security Assertion Markup Language) are both protocols used in the realm of identity management and authentication, but they serve different purposes and operate in different contexts. 
+  * LDAP: LDAP is primarily used for accessing and managing directory information services over a network. It is often used for storing user credentials and other related information in a directory service. It is commonly used for authentication and authorization, where applications can verify user credentials against an LDAP directory.
+  * SAML: SAML enables Single Sign-On (SSO) capabilities, allowing users to authenticate once and gain access to multiple applications without needing to log in again.
+
+  ![image](https://github.com/user-attachments/assets/818a8ff3-3ab3-4120-92a3-59b67b159be9)
+
+## Users
+
+* Within 'Settings' > 'Users'
+
+  ![image](https://github.com/user-attachments/assets/6f1d7ff3-35d5-433e-a3f0-da559f72805c)
+
+* Currently there's only one role (admin)
+
+  ![image](https://github.com/user-attachments/assets/6ba265fa-c3c2-4e97-9f18-ac6a908762f1)
+
+* Admin user is assigned to admin role
+
+  ![image](https://github.com/user-attachments/assets/cabe470c-5dcf-4060-abc4-a4ecb76cc2aa)
+
+## Roles
+
+* Within 'Settings' > 'Roles'
+
+  ![image](https://github.com/user-attachments/assets/faeb486d-d038-4920-90dd-4e1f5846b566)
+
+*  List of different default roles: admin role, can_delete
+
+  ![image](https://github.com/user-attachments/assets/f5da4939-6dc9-4e46-b03d-b05c9dadcd1d)
+
+* By clicking on 'admin' role, you see the list of capabilities
+
+  ![image](https://github.com/user-attachments/assets/9ecea81e-fa52-4c97-91bb-481b5e869238)
+
+## Password Policy
+
+* Within 'Settings' > 'Passwords'
+
+  ![image](https://github.com/user-attachments/assets/7eca67f1-5639-4c5a-8766-59ce1eb1a0f5)
+
+* Minimum characters for the policy is 8 characters
+
+  ![image](https://github.com/user-attachments/assets/bad648a9-c264-4b0e-b646-acd47cdaf3d9)
+
+* If user attempts to access withthe incorrect password 5 times, they will be lockouts for 30 min.
+
+  ![image](https://github.com/user-attachments/assets/e3bc3f4a-cce7-4fc5-95e8-301840d066b4)
+
+# Creating a new user
+
+## Users
+
+* Within 'Settings' > 'Users'
+
+  ![image](https://github.com/user-attachments/assets/6f1d7ff3-35d5-433e-a3f0-da559f72805c)
+
+* Select 'New User'
+
+  ![image](https://github.com/user-attachments/assets/f7bd37ef-3d51-4f87-accd-7987500b42b6)
+
+* Create a new user 'Eliana', with respective password, and assigned role will be that of 'user'.
+
+  ![image](https://github.com/user-attachments/assets/2e956239-d22a-4236-8a23-c19c7aabbedd)
+
+* Access Splunk by using these credentials Username 'Eliana' and password previously created.
+
+  ![image](https://github.com/user-attachments/assets/83afaa1e-08cc-4db7-9ab7-89e2d2600637)
+
+* User 'Eliana' has limited capabilities. By selecting on 'Settings', we can see that they have limited capabilities.
+
+  <img width="954" alt="image" src="https://github.com/user-attachments/assets/4814f100-a0ac-497f-b9c5-0942c7dd4197" />
+
+# Creating Custom Roles & Capabilities
+## Edit User
+
+* Select 'Settings' > 'Users' > select 'eliana' (user)
+  
+  ![image](https://github.com/user-attachments/assets/5a9f7f9b-441b-42b0-8880-af46263ec63c)
+
+* Set for the default application to  be 'Searcy & Reporting' when they access their account.
+
+  ![image](https://github.com/user-attachments/assets/c997735d-b879-4818-9d76-8ac44291ccd2)
+
+## Create new Role
+
+*  Select 'Settings' > 'Role > 'New Role'
+
+  ![image](https://github.com/user-attachments/assets/d238b61b-11ce-49ce-8c2d-109e65a22670)
+
+* Add details for that new role
+
+  ![image](https://github.com/user-attachments/assets/c9a5479e-38b4-47e5-a12d-ae5a4cf53b20)
+
+  ![image](https://github.com/user-attachments/assets/37a4058b-e483-40a3-89b1-4968ed37aa60)
+
+  ![image](https://github.com/user-attachments/assets/0e56eb57-2d92-4b35-9368-22ba7c1f3e47)
+
+  ![image](https://github.com/user-attachments/assets/c0d0d0fc-f50f-4920-aae5-de9c901f63cf)
+
+  ![image](https://github.com/user-attachments/assets/a4625f8c-5a3c-4e62-9f7d-f39be1468f12)
