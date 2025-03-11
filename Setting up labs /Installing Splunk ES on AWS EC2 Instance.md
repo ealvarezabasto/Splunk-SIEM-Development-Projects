@@ -1,4 +1,4 @@
-# Installing a Splunk Instance in AWS EC2 (Ubuntu Linux)
+# Installing Splunk ES on AWS EC2 Instance (Ubuntu Linux)
 
 ## 1. Create Ubuntu Linux within AWS EC2
 * Select EC2
