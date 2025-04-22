@@ -1,0 +1,23 @@
+# Splunk Architecture
+
+Splunk can be deployed in a viariety of configurations. Scales from a single server to a distributed infrastructure. Below is an example of a simple test server.
+
+## 1. Data Input
+
+* Data can be in any format: database servers, logs from a custmer, logs from network, switches, servers, mobile devices, and web-services.
+* **Forwarder:** Collects data from different servers and sends it to Splunk for indexing purposes.
+
+## 2. Parsing Stage
+
+* Breaks data into events - rows in the database tables and then it stores data into the index.
+* **Indexer:** Receives data from Forwarder and parses it (breaks it into different events based on that data) and then indexes it to Splunk.
+
+## 3. Indexing
+
+* Table in a relational database format
+* **Licensing/License Meter:** Defines daily data volume limit that can be indexed into Splunk. You can't excede your license.
+
+## 4. Searching
+
+* Runs searches on those indexes to build reports on that data.
+* SPL Language used to search
