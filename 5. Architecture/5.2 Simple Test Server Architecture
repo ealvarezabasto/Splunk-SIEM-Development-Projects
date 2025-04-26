@@ -1,6 +1,6 @@
 # Splunk Architecture
 
-Splunk can be deployed in a viariety of configurations. Scales from a single server to a distributed infrastructure. Below is an example of a simple test server.
+Splunk can be deployed in a viariety of configurations. Scales from a single server to a distributed infrastructure. Below is an example of a simple test server and it's 4 capabilities.
 
 ## 1. Data Input
 
