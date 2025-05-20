@@ -1,7 +1,8 @@
 # Introduction
 
-Below are personal notes from reading and understanding Splunk Capacity Planning Manuagl
+Below are personal notes from reading and understanding Splunk Capacity Planning Manual
 Link: https://docs.splunk.com/Documentation/Splunk/9.4.2/Capacity/IntroductiontocapacityplanningforSplunkEnterprise
+***Disclaimer: All text within "" is a word by word copy paste from the Splunk Capacity Planning Manual***
 
 * Splunk Enterprise can accomodate nearly any capacity need. However, effectively taking advantage of the scaling capability requires planning.
 
@@ -32,6 +33,22 @@ Ask the below questions with regards to your organization:
 
 * "After Splunk Enterprise consumes data and places it into indexes, those indexes grow and take up disk space. As the indexes grow and available disk space decreases, Splunk Enterprise takes more time to index incoming data because the indexer's disk subsystem takes more time to find space to store the data."
 * "As indexes grow, search slows down because the disk subsystem needs to account for search requests, and it also needs to handle increasingly longer requests to store incoming data."
+
+## Understanding I/O Bandwidth
+
+**Overview**
+
+* "As the amount of data stored in a Splunk Enterprise index increases, so does the I/O bandwidth needed to store data and provide results for searches."
+
+**Defining I/O Bandwidth**
+
+* Measurement: I/O bandwidth is typically measured in units such as megabytes per second (MB/s) or gigabytes per second (GB/s). This indicates how much data can be transferred to or from the storage medium within one second.
+
+* Components: I/O bandwidth is influenced by several factors, including:
+   * Storage Type: Different storage technologies (HDDs, SSDs, NVMe) have varying bandwidth capabilities. SSDs, for example, generally offer much higher bandwidth than traditional hard drives.
+   * Interface: The connection between the storage device and the computer (e.g., SATA, SAS, PCIe) can affect bandwidth. Faster interfaces allow for higher data transfer rates.
+   * System Architecture: The overall design of the system, including CPU, memory, and how they interact with storage, can impact I/O performance.
+* Importance: High I/O bandwidth is essential for applications that process large volumes of data or require quick access to data. For example, in data analytics platforms like Splunk, sufficient I/O bandwidth ensures that search queries return results quickly, even when dealing with large datasets.
 
 # Searching
 * An indexer dedicates one of its available CPU cores for every search that a user runs for as long as the search is active. Multiple users running searches can eat up the available CPU cores. CPU cores are split between indexing, search, and handling on-line users. The solution is to increase the number of indexers that will increase capacity.
