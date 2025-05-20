@@ -52,6 +52,7 @@ Ask the below questions with regards to your organization:
 
 # Searching
 * An indexer dedicates one of its available CPU cores for every search that a user runs for as long as the search is active. Multiple users running searches can eat up the available CPU cores. CPU cores are split between indexing, search, and handling on-line users. The solution is to increase the number of indexers that will increase capacity.
+* "This growth has an impact on search, as well. On a single indexer, disk throughput splits between indexing, which is ongoing, and search requests, which are interrupts based on requests scheduled by users. As indexes grow, search slows down because the disk subsystem needs to account for search requests, and it also needs to handle increasingly longer requests to store incoming data. Depending on the type of search, those kinds of requests can be I/O-intensive."
 
 ## Saved Searches
 * A saved search (report) consumes ~1 CPU core and a specified amount of memory white it executes.
