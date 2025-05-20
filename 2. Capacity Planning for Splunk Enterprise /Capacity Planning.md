@@ -59,4 +59,10 @@ Ask the below questions with regards to your organization:
 * A saved search increases the amount of disk I/O temporarily as the disk subsystme looks through the indexes to retrieved the requested data.
 
 ## Search Heads
+Definition
+* Components in a Splunk architecture that handle user search requests and distribute them to indexers.
+
+Key Metrics
+* By adding more search heads, you increase the number of CPU cores available for processing search queries. This allows the system to handle more concurrent searches (multiple users or processes searching at the same time) efficiently.
+
 * "Adding search heads provides additional CPU cores to run more concurrent searches. Adding indexers helps scale with the increased search load and concurrency that comes from adding search heads. Adding RAM to your existing machines helps with concurrent searches but does not give you additional search capacity."
