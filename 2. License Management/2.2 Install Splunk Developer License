@@ -1,0 +1,24 @@
+# Install Splunk Developer License
+
+## Downloading Splunk Developer License
+* Login to Splunk Account
+
+* Download file
+
+## Installing Splunk Developer License
+
+* Access to the Management Server
+
+  <img width="1718" height="428" alt="image" src="https://github.com/user-attachments/assets/97a6a581-7a74-4d8b-b8b0-8f409e4f2a60" />
+
+* Access Settings > Licensing
+
+  <img width="910" height="858" alt="image" src="https://github.com/user-attachments/assets/035f5f4d-c78c-4329-a8db-7c56c7d9c511" />
+
+* Select ***Change license group***
+
+  <img width="1892" height="411" alt="image" src="https://github.com/user-attachments/assets/6b1e2041-58e4-4cf2-ae89-a545cfcd6561" />
+
+* Select ***Enterprise license*** and add the Splunk Developer License (Refer to section 1.8 on how to retrieve Splunk Developer License). Select ***Save***
+
+* Return to Licensing view, license in use is **Enterprise license group**
