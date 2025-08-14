@@ -80,5 +80,45 @@
 
 * Edit all server roles (Cluster Manager, indexer 1, indexer 2, indexer 3, deployer, search head1, search head2, search head3, License Manager, Deployment Server). Refer to the below picture to set roles depending on the Server
 
+  <img width="310" height="219" alt="image" src="https://github.com/user-attachments/assets/81eef86b-282a-496d-aef3-2ad30636e7fa" />
+
+
+### Edit server roles for Cluster Manager (Private IP: 172.31.34.178)
+
   <img width="1883" height="315" alt="image" src="https://github.com/user-attachments/assets/a267bfa9-1236-441f-802a-c4d5fd082267" />
 
+* Check **Cluster Manager** and select ***Save***
+
+  <img width="365" height="499" alt="image" src="https://github.com/user-attachments/assets/1ad7d84b-7880-4aef-8bff-e9ce605267d7" />
+
+### Edit server roles for the rest of the components
+
+* Repeat the same process for Indexer 2, Indexer 3, Deployer, Search Head 1, Search Head 2, Search Head 3, License Manager.
+
+### Edit server role for Deployment Server instance
+
+  <img width="1893" height="464" alt="image" src="https://github.com/user-attachments/assets/8d9083cf-e1ff-49b3-939f-3006eb130dbb" />
+
+* Check **Deployment Server** and select ***Save***
+
+  <img width="364" height="492" alt="image" src="https://github.com/user-attachments/assets/35005680-8d30-4ca8-8762-e0404d3cfae0" />
+
+* Final result:
+  
+  <img width="1885" height="533" alt="image" src="https://github.com/user-attachments/assets/6e85efc7-ab9d-4142-9dab-760d3f3e3f14" />
+
+  ## Enable Forwarder Monitoring Setup
+
+  * Within Management Server, go to ***Settings*** > ***Forwarder Monitoring Setup***
+
+    <img width="1889" height="287" alt="image" src="https://github.com/user-attachments/assets/54263c85-deff-421a-9c58-7a1edf82b028" />
+
+* Click on ***Enable*** > Configure the Data collection interval as "15 mins" and click on ***Save***
+
+  <img width="1908" height="364" alt="image" src="https://github.com/user-attachments/assets/c6d80c04-a07c-416e-a905-d2d76e6dd818" />
+
+**Note** It will take around 15 to 30 min to get all the forewarder details to be loaded in the Monitoring Console
+
+## Check if All Splunk Servers are visibile in the Monitoring Console
+
+* Click ont he Overview its shows full details of the monitoring console
